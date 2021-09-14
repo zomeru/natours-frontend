@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Layout from '@components/Layout';
+import Hero from '@components/sections/Hero';
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +14,10 @@ const Home: NextPage = () => {
           handle: '@natoursph',
         },
       }}
-    ></Layout>
+    >
+      <Hero />
+      <div className='h-10'></div>
+    </Layout>
   );
 };
 

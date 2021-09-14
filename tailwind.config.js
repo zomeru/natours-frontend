@@ -7,16 +7,19 @@ module.exports = {
         urbanist: '"Urbanist", sans-serif',
       },
     },
-    colors: {
-      green: {
-        light: '#80ed99',
-        default: '#57cc99',
-      },
-      blue: {
-        light: '#38a3a5',
-        default: '#22577a',
-      },
-    },
+    // colors: {
+    //   white: {
+    //     default: '#c7f9cc',
+    //   },
+    //   green: {
+    //     light: '#80ed99',
+    //     default: '#57cc99',
+    //   },
+    //   blue: {
+    //     light: '#38a3a5',
+    //     default: '#22577a',
+    //   },
+    // },
   },
   variants: {
     extend: {},

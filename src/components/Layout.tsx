@@ -6,11 +6,12 @@ interface LayoutProps {
   seo: NextSeoProps;
 }
 
-const Layout: React.FC<LayoutProps> = ({ seo }) => {
+const Layout: React.FC<LayoutProps> = ({ children, seo }) => {
   return (
     <div id='root' className='min-h-screen max-w-screen-2xl'>
       <NextSeo {...seo} />
       <Nav />
+      <main>{children}</main>
     </div>
   );
 };

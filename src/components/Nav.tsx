@@ -11,7 +11,7 @@ const LinkItem = ({ path, mrSize, text }) => {
   return (
     <li className={`mr-${mrSize}`}>
       <Link href={path}>
-        <a>{text}</a>
+        <a className=''>{text}</a>
       </Link>
     </li>
   );
@@ -21,11 +21,11 @@ interface NavProps {}
 
 const Nav: React.FC<NavProps> = () => {
   return (
-    <header className='h-16 px-10 bg-green-default'>
-      <nav className='flex items-center justify-between h-full'>
+    <header className='h-20 px-10'>
+      <nav className='flex items-center justify-between h-full text-lg text-green-700'>
         <h1>Natours PH</h1>
         <div>
-          <ul className='flex text-white'>
+          <ul className='flex'>
             <LinkItem path='#' mrSize={10} text='Home' />
             <LinkItem path='#' mrSize={10} text='Tours' />
             <LinkItem path='#' mrSize={10} text='Contact' />
