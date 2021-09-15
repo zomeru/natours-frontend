@@ -8,7 +8,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children, seo }) => {
   return (
-    <div id='root' className='min-h-screen max-w-screen-2xl'>
+    <div id='root'>
       <NextSeo {...seo} />
       <Nav />
       <main>{children}</main>

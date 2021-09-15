@@ -4,7 +4,11 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"]
+      "@components/*": ["src/components/*"],
+      "@styles/*": ["src/styles/componentStyles/*"],
+      "@sectionStyles/*": ["src/styles/componentStyles/sectionStyles/*"],
+      "@typings/*": ["src/typings/*"],
+      "@configs/*": ["src/configs/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,

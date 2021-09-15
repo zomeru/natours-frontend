@@ -1,23 +1,32 @@
 import React from 'react';
 import Link from 'next/link';
+import { StyledNav, StyledLinkList } from '@styles/NavStyles';
+import { navLinks } from '../configs/StaticData';
 
 interface NavProps {}
 
 const Nav: React.FC<NavProps> = () => {
   return (
-    <header>
+    <StyledNav>
       <nav>
-        <h1>Natours PH</h1>
-        <div>
-          <ul>
-            <li>Zomer</li>
-            <li>Zomer</li>
-            <li>Zomer</li>
-            <li>Zomer</li>
-          </ul>
-        </div>
+        <a href='#'>
+          <h1>Natours</h1>
+        </a>
+
+        <StyledLinkList>
+          {navLinks.map((item, i) => {
+            const { name, link } = item;
+            return (
+              <li key={i} className='link'>
+                <Link href={link}>
+                  <a>{name}</a>
+                </Link>
+              </li>
+            );
+          })}
+        </StyledLinkList>
       </nav>
-    </header>
+    </StyledNav>
   );
 };
 
