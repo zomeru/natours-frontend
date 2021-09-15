@@ -1,20 +1,24 @@
 import React from 'react';
 import Image from 'next/image';
 import boracay from '../assets/images/boracay.jpg';
+import { StyledTourCard } from '@styles/TourCardStyles';
 
 interface TourCardProps {}
 
 const TourCard: React.FC<TourCardProps> = () => {
   return (
-    <div>
-      <Image
-        // className='relative'
-        src={boracay}
-        alt='Boracay'
-        layout='intrinsic'
-        objectFit='cover'
-        objectPosition='center'
-      />
+    <StyledTourCard>
+      <div className='card-image'>
+        <Image
+          src={boracay}
+          alt='Boracay'
+          layout='fill'
+          objectFit='cover'
+          objectPosition='center'
+          placeholder='blur'
+        />
+        <div className='image-overlay' />
+      </div>
 
       <div></div>
       <div>
@@ -23,7 +27,7 @@ const TourCard: React.FC<TourCardProps> = () => {
           <p>Rating</p>
         </div>
       </div>
-    </div>
+    </StyledTourCard>
   );
 };
 

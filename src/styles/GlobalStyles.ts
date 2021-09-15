@@ -33,7 +33,9 @@ const GlobalStyles = createGlobalStyle`
 
   section {
     max-width: var(--max-width);
-    margin: 0 auto;
+    width: 100vw;
+    margin: 60px auto;
+    padding: 0 50px;
   }
 
   a {
@@ -76,6 +78,13 @@ const GlobalStyles = createGlobalStyle`
       background-color: var(--color-green);
       transition: var(--transition2);
     }
+  }
+
+  .section-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--color-green);
   }
 `;
 

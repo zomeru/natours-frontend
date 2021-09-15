@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledHero = styled.section`
+  padding: 0;
+  margin: 0;
   max-width: 100vw;
   width: 100vw;
   min-height: 300px;
@@ -19,6 +21,7 @@ export const StyledHero = styled.section`
 export const StyledHeroContainer = styled.div`
   height: 100%;
   max-width: var(--max-width);
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

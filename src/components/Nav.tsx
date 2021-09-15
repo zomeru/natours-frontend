@@ -17,9 +17,9 @@ const Nav: React.FC<NavProps> = () => {
           {navLinks.map((item, i) => {
             const { name, link } = item;
             return (
-              <li key={i} className='link'>
+              <li key={i}>
                 <Link href={link}>
-                  <a>{name}</a>
+                  <a className='link'>{name}</a>
                 </Link>
               </li>
             );
