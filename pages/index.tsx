@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         },
       }}
     >
-      {/* <Hero /> */}
+      <Hero />
       {/* <Tours /> */}
     </Layout>
   );

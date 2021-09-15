@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const StyledNav = styled.header`
-  width: 100%;
+  margin: 0 auto;
+  max-width: var(--max-width);
   height: var(--nav-height);
-  /* background-color: var(--color-green-light); */
   padding: 0 50px;
 
   nav {
@@ -17,6 +17,10 @@ export const StyledNav = styled.header`
 export const StyledLinkList = styled.ul`
   display: flex;
   flex-direction: row;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 
   li {
     :not(:last-child) {

@@ -1,12 +1,16 @@
 import React from 'react';
+import { StyledHero, StyledHeroContainer } from '@sectionStyles/HeroStyles';
 
 interface HeroProps {}
+
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <div>
-      <h1>Natours PH</h1>
-      <h2>Outdoors is where life happens</h2>
-    </div>
+    <StyledHero>
+      <StyledHeroContainer>
+        <h1>Natours</h1>
+        <h2>Outdoors is where life happens</h2>
+      </StyledHeroContainer>
+    </StyledHero>
   );
 };
 

@@ -18,8 +18,10 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    width: 100%;
+    max-width: 100vw;
     margin: 0 auto;
-    max-width: var(--max-width);
+    letter-spacing: 1px;
     font-family: 'Urbanist', -apple-system, BlinkMacSystemFont, 'Segoe UI',
       Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
       sans-serif;
@@ -30,7 +32,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   section {
-    width: 100%;
+    max-width: var(--max-width);
     margin: 0 auto;
   }
 

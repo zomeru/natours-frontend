@@ -1,6 +1,7 @@
 import React from 'react';
 import { NextSeo, NextSeoProps } from 'next-seo';
 import Nav from '@components/Nav';
+import styled from 'styled-components';
 
 interface LayoutProps {
   seo: NextSeoProps;
