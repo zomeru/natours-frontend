@@ -4,7 +4,7 @@ const Variables = css`
   :root {
     //? Colors
     --color-white: #feffde;
-    --color-white-dirty: #ddffbc;
+    --color-white-dirty: #e6ffcd;
     --color-green: #91c788;
     --color-green-light: #acffad;
     --color-green-dark: #52734d;

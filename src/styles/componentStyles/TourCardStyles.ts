@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 
 export const StyledTourCard = styled.div`
-  max-width: 320px;
-  width: 320px;
-  padding: 0 20px;
-  margin: 0 auto;
+  width: 300px;
+  height: 450px;
+  margin: 0 20px;
   border-radius: 5px;
   overflow: hidden;
+  margin-bottom: 30px;
 
   :hover .image-overlay {
     opacity: 0;
   }
 
   .card-image {
-    height: 150px;
+    height: 180px;
     width: 100%;
     border-radius: 6px 6px 0 0;
     overflow: hidden;
@@ -34,5 +34,44 @@ export const StyledTourCard = styled.div`
     z-index: 33;
     opacity: 1;
     transition: var(--transition2);
+  }
+
+  .tour-info {
+    height: calc(450px - 180px);
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-white-dirty);
+  }
+
+  .tour-title {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  .tour-description {
+    font-weight: 400;
+  }
+
+  .tour-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-weight: 400;
+    }
+
+    span {
+      font-weight: 500;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
   }
 `;

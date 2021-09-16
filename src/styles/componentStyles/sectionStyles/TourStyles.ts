@@ -11,6 +11,7 @@ export const StyledTourContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
+  justify-content: center;
   /* display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 30px;
