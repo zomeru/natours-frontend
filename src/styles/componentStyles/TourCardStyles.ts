@@ -12,12 +12,23 @@ export const StyledTourCard = styled.div`
     opacity: 0;
   }
 
+  :hover .image-wrapper {
+    transform: scale(1.2);
+  }
+
   .card-image {
     height: 180px;
     width: 100%;
     border-radius: 6px 6px 0 0;
     overflow: hidden;
     position: relative;
+  }
+
+  .image-wrapper {
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    transition: var(--transition2);
   }
 
   .image-overlay {

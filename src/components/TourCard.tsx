@@ -28,14 +28,16 @@ const TourCard: React.FC<TourCardProps> = ({
   return (
     <StyledTourCard>
       <div className='card-image'>
-        <Image
-          src={`${process.env.NEXT_PUBLIC_STATIC_BASE_ENDPOINT}/img/tours/${image}`}
-          alt={alt}
-          layout='fill'
-          objectFit='cover'
-          objectPosition='center'
-        />
-        <div className='image-overlay' />
+        <div className='image-wrapper'>
+          <Image
+            src={`${process.env.NEXT_PUBLIC_STATIC_BASE_ENDPOINT}/img/tours/${image}`}
+            alt={alt}
+            layout='fill'
+            objectFit='cover'
+            objectPosition='center'
+          />
+          <div className='image-overlay' />
+        </div>
       </div>
 
       <div className='tour-info'>
