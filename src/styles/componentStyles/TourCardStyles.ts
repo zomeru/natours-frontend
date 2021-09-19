@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledTourCard = styled.div`
-  width: 300px;
+  max-width: 350px;
   height: 450px;
-  margin: 0 20px;
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 30px;
+  place-self: center;
 
   :hover .image-overlay {
     opacity: 0;
@@ -46,7 +46,7 @@ export const StyledTourCard = styled.div`
     background-color: var(--color-white-dirty);
   }
 
-  .tour-title {
+  .tour-name {
     font-size: 28px;
     font-weight: 300;
     margin-bottom: 10px;
@@ -54,6 +54,7 @@ export const StyledTourCard = styled.div`
 
   .tour-description {
     font-weight: 400;
+    margin-bottom: 25px;
   }
 
   .tour-price {

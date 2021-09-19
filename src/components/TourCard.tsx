@@ -4,42 +4,61 @@ import boracay from '../assets/images/boracay.jpg';
 import CardButton from '@components/CardButton';
 import { StyledTourCard } from '@styles/TourCardStyles';
 
-interface TourCardProps {}
+interface TourCardProps {
+  name: string;
+  summary: string;
+  price: number;
+  ratingAverage: number;
+  ratingQuantity: number;
+  tourLink: string;
+  image: string;
+  alt: string;
+}
 
-const TourCard: React.FC<TourCardProps> = ({}) => {
+const TourCard: React.FC<TourCardProps> = ({
+  name,
+  summary,
+  price,
+  ratingAverage,
+  ratingQuantity,
+  tourLink,
+  image,
+  alt,
+}) => {
   return (
     <StyledTourCard>
       <div className='card-image'>
         <Image
-          src={boracay}
-          alt='Boracay'
+          src={`${process.env.NEXT_PUBLIC_STATIC_BASE_ENDPOINT}/img/tours/${image}`}
+          alt={alt}
           layout='fill'
           objectFit='cover'
           objectPosition='center'
-          placeholder='blur'
         />
         <div className='image-overlay' />
       </div>
 
       <div className='tour-info'>
         <div className='tour-about'>
-          <h3 className='tour-title'>CARD TITLE</h3>
-          <p className='tour-description'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor neque
-            culpa rem aspernatur voluptatum alias?
-          </p>
+          <h3 className='tour-name'>{name}</h3>
+          <p className='tour-description'>{summary}</p>
         </div>
 
         <div className='tour-price'>
           <div>
             <p>
-              <span>&#8369;999</span> per person
+              <span>&#8369;{price}</span> per person
             </p>
             <p>
-              <span>4.8</span> rating (6)
+              <span>{ratingAverage}</span> rating ({ratingQuantity})
             </p>
           </div>
-          <CardButton href='#' buttonText='Details' />
+          <CardButton
+            href={tourLink}
+            target='_blank'
+            rel='noreferrer'
+            buttonText='Details'
+          />
         </div>
       </div>
     </StyledTourCard>
