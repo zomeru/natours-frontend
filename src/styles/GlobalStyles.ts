@@ -17,6 +17,21 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: inherit;
   }
 
+  // Scrollbar styles 
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-green);
+  }
+
+  body::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--color-green);
+    border-radius: 10px;
+  }
+
   body {
     width: 100%;
     max-width: 100vw;
@@ -29,6 +44,7 @@ const GlobalStyles = createGlobalStyle`
     color: var(--color-gray-dark);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
   section {

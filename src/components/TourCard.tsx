@@ -35,6 +35,7 @@ const TourCard: React.FC<TourCardProps> = ({
             layout='fill'
             objectFit='cover'
             objectPosition='center'
+            quality={30}
           />
           <div className='image-overlay' />
         </div>
@@ -55,12 +56,7 @@ const TourCard: React.FC<TourCardProps> = ({
               <span>{ratingAverage}</span> rating ({ratingQuantity})
             </p>
           </div>
-          <CardButton
-            href={tourLink}
-            target='_blank'
-            rel='noreferrer'
-            buttonText='Details'
-          />
+          <CardButton href={tourLink} buttonText='Details' />
         </div>
       </div>
     </StyledTourCard>

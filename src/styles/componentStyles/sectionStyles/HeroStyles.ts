@@ -4,7 +4,7 @@ export const StyledHero = styled.section`
   padding: 0;
   margin: 0;
   max-width: 100vw;
-  width: 100vw;
+  /* width: 100vw; */
   min-height: 300px;
   height: calc(50vw - 40px);
   max-height: 400px;

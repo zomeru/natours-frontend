@@ -7,10 +7,10 @@ const Home: NextPage = () => {
   return (
     <Layout
       seo={{
-        title: 'Natours PH',
+        title: 'Natures PH | Zomer Cutie',
         description: 'Nature Tours in the Philippines',
         twitter: {
-          site: 'https://natours-ph.ml/',
+          site: 'https://iLoveYou:3000/',
           cardType: 'summary_large_image',
           handle: '@natoursph',
         },
